@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favorite music</title>
+    <link rel="stylesheet" href="styles.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="container" onclick="working()">Playlist</div>
+        <div class="list">
+            <ul>
+                <li class="music" onclick="track1()">
+                     <img class="wow" src="" alt=""> <h5 class="text"></h4>
+                </li>
+                <li class="music" onclick="track2()">
+                     <img class="wow" src="" alt=""> <h5 class="text"></h4>
+                    
+                </li>
+                <li class="music" onclick="track3()">
+                    <img class="wow" src="" alt=""> <h5 class="text"></h4>
+                </li>
+                <li class="music" onclick="track4()">
+                     <img class="wow" src="" alt=""> <h5 class="text"></h4>
+                    
+                </li>
+                <li class="music" onclick="track5()">
+                     <img class="wow" src="" alt=""> <h5 class="text"></h4>
+                    
+                </li>
+                <li class="music" onclick="track6()">
+                     <img class="wow" src="" alt=""> <h5 class="text"></h4>
+                    
+                </li>
+                <li class="music" onclick="track7()">
+                     <img class="wow" src="" alt=""> <h5 class="text"></h4>
+                    
+                </li>
+                <li class="music" onclick="track8()">
+                     <img class="wow" src="" alt=""> <h5 class="text"></h4>
+                    </button>
+                </li>
+            </ul>
+         </div>    
+       
+         <div class="wrapper">
+       <div class="details">
+	     <div class="now-playing">PLAYING x OF y</div>
+	     <img class="track-art" src="" alt="">
+	    <div class="song-name">Track Name</div>
+	     <div class="artist">Track Artist</div>
+	   </div>
+		
+        <div class="slider_container">
+			<div class="current-time">00:00</div>
+	        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+	        <div class="total-duration">00:00</div>
+        </div>
+        <div class="slider_container">
+			<i class="fa fa-volume-down"></i>
+	        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+	        <i class="fa fa-volume-up"></i>
+        </div>
+
+        <div class="buttons">
+            <div class="prev-track" onclick="prevTrack()">
+                 <i class="fa fa-step-backward fa-2x"></i>
+             </div>
+             <div class="playpause-track" onclick="playpauseTrack()">
+                 <i class="fa fa-play-circle fa-5x"></i>
+             </div>
+             <div class="next-track" onclick="nextTrack()">
+                 <i class="fa fa-step-forward fa-2x"></i>
+             </div>
+             <div class="repeat-track" onclick="repeatTrack()">
+                 <i class="fa fa-repeat fa-2x" title="repeat"></i>
+             </div>
+        </div>
+     </div>
+     <script src="index.js"></script>
+</body>
+</html>
+

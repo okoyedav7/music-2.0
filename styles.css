@@ -1,0 +1,223 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    transition: background-color .5s;
+    margin: 0;
+    }
+
+
+    @media screen and (max-width: 599px) {
+
+    .list{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background-color: #151E68;
+        width: 50%;
+        display: none;
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+       }
+       
+       ul{
+           display: flex;
+           height: 100%;
+           flex-direction: column;
+           list-style: none;
+           align-items: center;
+           margin: 0;
+           padding: 0;
+       }
+
+    .container{
+        position: fixed;
+        margin: 0;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        z-index: 101;
+    }
+    .container:hover{
+        color: red;
+    }
+    }
+    @media screen and (min-width: 600px) {
+    .container{
+        display: none}
+
+        .list{
+            border: 1px solid black;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            border-radius: 12px;
+            width: 40%;
+        }
+    
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        
+        }
+        
+    }
+   
+    h5{
+        padding: 12px;
+        margin: 0;
+        word-wrap: inherit;
+    }
+
+     li{
+        margin: 0.5rem 0;
+       }
+
+     .music{
+       height: 3rem;
+       width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+     }
+
+     .wow{
+        margin: 0 12px;
+        width: 70px;
+     }
+   
+    .wrapper {
+    height: 95vh;
+    width: 100%;
+    margin: 20px 10%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+    .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 20px;
+    max-height: inherit;
+    }
+    
+    .track-art {
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    }
+
+    img{
+        height: 100%;
+        width: 30%;
+    }
+    
+    .now-playing {
+    font-size: 1rem;
+    }
+    
+    .track-name {
+    font-size: 3rem;
+    }
+    
+    .track-artist {
+    font-size: 1.5rem;
+    }
+    
+    .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    
+    .playpause-track,
+    .prev-track,
+    .next-track {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+    }
+    
+    .playpause-track:hover,
+    .prev-track:hover,
+    .next-track:hover {
+    opacity: 1.0;
+    }
+    
+    .slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    }
+    
+    .seek_slider::-webkit-slider-thumb,
+    .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+    }
+    
+    .seek_slider:hover,
+    .volume_slider:hover {
+    opacity: 1.0;
+    }
+	
+  
+    .volume_slider {
+    width: 30%;
+    }
+    
+    .current-time,
+    .total-duration {
+    padding: 10px;
+    }
+    
+    i.fa-volume-down,
+    i.fa-volume-up {
+    padding: 10px;
+    }
+    
+    i.fa-play-circle,
+    i.fa-pause-circle,
+    i.fa-step-forward,
+    i.fa-step-backward {
+    cursor: pointer;
+    }
